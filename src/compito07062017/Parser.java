@@ -17,7 +17,7 @@ public class Parser extends Thread {
                 String s = st.prendiHTML();
                 System.out.println("Preso HTML: " + s + " effettuo parsing...");
                 sleep(2000);
-                int v = (int) (Math.random() * 11);
+                int v = (int) (1 + Math.random() * 10); // con 0 mi va in stallo
                 st.addURL(v, "Urls");
                 st.incParser(v);
             }
