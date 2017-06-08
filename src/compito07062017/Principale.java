@@ -19,7 +19,7 @@ public class Principale {
         } while (n < 0 || m < 0);
         Store st = new Store();
         try {
-            st.addURL(1, "Urls");
+            st.addURL(1, "https://www.ettorecelozzi");
         } catch (InterruptedException e) {
         }
 

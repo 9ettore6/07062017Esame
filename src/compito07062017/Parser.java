@@ -15,10 +15,10 @@ public class Parser extends Thread {
         try {
             while (true) {
                 String s = st.prendiHTML();
-                System.out.println("Preso HTML: " + s + " effettuo parsing...");
+                System.out.println("Preso HTML: " + s + ".html effettuo parsing...");
                 sleep(2000);
                 int v = (int) (1 + Math.random() * 10); // con 0 mi va in stallo
-                st.addURL(v, "Urls");
+                st.addURL(v, s);
                 st.incParser(v);
             }
         } catch (InterruptedException e) {

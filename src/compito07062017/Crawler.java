@@ -15,9 +15,9 @@ public class Crawler extends Thread {
         try {
             while (true) {
                 String s = st.prendiURL();
-                System.out.println("Preso Url: " + s + " faccio il download...");
+                System.out.println("Preso Url: " + s + ".it faccio il download...");
                 sleep(2000);
-                st.insHTML("Html");
+                st.insHTML(s);
                 st.incCrawler();
             }
         } catch (InterruptedException e) {
